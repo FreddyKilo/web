@@ -1,0 +1,77 @@
+.nav {
+  height: 50px;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url('https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/BackgroundPic.jpg');
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.jumbotron p {
+  color: #fff;
+  font-size: 48px;
+  font-family: Georgia, serif;
+  padding: 20px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 50px;
+}
+.projects h2 {
+  font-family: Gadget, sans-serif;
+  font-weight: bold;
+}
+
+.dream {
+  background-color: #f2f2ff;
+  padding: 20px;
+}
+
+.dream h3 {
+  font-size: 20px;
+  font-family: "Arial", Gadget, sans-serif;
+  font-weight: bold;
+}
+
+.dream a {
+  color: #00b0ff;
+}
+
+.Thumbs h2 {
+  font-family: "Arial", Gadget, sans-serif;
+  font-weight: bold;
+  color: #505050;
+}
+
+.Thumbs .container {
+  position: relative;
+}
+
+.thumbnail {
+  background-size: 100%;
+}
+
+.testing-header h1 {
+  font-family: courier;
+  font-weight: bold;
+}
