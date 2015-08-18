@@ -4,25 +4,33 @@
     <title id="title">It's He-Man!</title>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <script src="./javascript/test_page.js"></script>
-    <div id="wink" class="testing-header">
-      <h1>Testing this shizz</h1>
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+  <script src="./javascript/test_page.js"></script>
+    <div class="testing-header">
+      <h1 id="wink">Testing this shizz</h1>
     </div>
     <div class="col-md-5">
       <div class="thumbnail">
-        <img id="he-man" src="./images/He-Man.jpg" onClick="changeImage(); changeHeader()">
+        <img id="he-man" src="./images/He-Man.jpg" onClick="changeImage(); changeHeader()" data-toggle="tooltip" title="I have the power!" data-placement="bottom">
       </div>
       <h1>Live video from a random house</h1>
-      <div class="thumbnail">
+      <div class="thumbnail-2">
         <video autoplay="autoplay">
           <source src="http://freddykilo.ddns.net:5000"/>
         </video>
       </div>
       <h1>Live video from the ISS</h1>
-      <div class="thumbnail">
+      <div class="thumbnail-3">
         <iframe width="480" height="296" src="http://www.ustream.tv/embed/9408562?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>
       </div>
     </div>

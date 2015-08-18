@@ -11,11 +11,11 @@ function changeImage() {
 }
 
 function changeHeader() {
-    var header = document.getElementById('wink');
-    var headerString = header.innerHTML;
-    if (headerString == 'Wink left eye') {
-        headerString = "Wink right eye!"
+    if (document.getElementById("wink").innerHTML.match("Wink right eye")) {
+        document.getElementById("wink").innerHTML = "Wink left eye!";
+        document.getElementById("he-man").setAttribute("data-original-title", "I have the Power!");
     } else {
-        headerString = "Wink left eye!"
+        document.getElementById("wink").innerHTML = "Wink right eye!";
+        document.getElementById("he-man").setAttribute("data-original-title", "Howdy partner");
     }
 }

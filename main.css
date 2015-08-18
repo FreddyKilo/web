@@ -68,6 +68,15 @@
 }
 
 .thumbnail {
+  width: 200px;
+  height: 200px;
+}
+
+.thumbnail-2 {
+  background-size: 100%;
+}
+
+.thumbnail-3 {
   background-size: 100%;
 }
 
@@ -75,3 +84,4 @@
   font-family: courier;
   font-weight: bold;
 }
+
