@@ -1,21 +1,20 @@
 .nav {
-  height: 50px;
+  height: 55px;
 }
 
 .nav a {
   color: #5a5a5a;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 14px 16px;
-  text-transform: uppercase;
-}
+  padding: 16px 20px;
+  text-transform: uppercase;}
 
 .nav li {
   display: inline;
 }
 
 .jumbotron {
-  height: 400px;
+  height: 500px;
   background-image: url('https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/BackgroundPic.jpg');
 }
 
@@ -67,7 +66,12 @@
   position: relative;
 }
 
-.thumbnail {
+.col-md-4 .thumbnail {
+  width: 300px;
+  height: 270px;
+}
+
+.col-md-5 .thumbnail {
   width: 200px;
   height: 200px;
 }
