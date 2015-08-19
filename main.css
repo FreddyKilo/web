@@ -13,6 +13,11 @@
   display: inline;
 }
 
+.nav .logo {
+  font-size: 22px;
+  padding: 16px 20px;
+}
+
 .jumbotron {
   height: 500px;
   background-image: url('https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/BackgroundPic.jpg');
@@ -89,3 +94,6 @@
   font-weight: bold;
 }
 
+/*.col-md-5 ul {
+  position: relative;
+}*/

@@ -10,43 +10,46 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-  <script>
-  $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-  });
-  </script>
-  <script src="./javascript/test_page.js"></script>
-  <div class="nav">
-        <div class="container">
-          <ul class="pull-left">
-            <a id="freddy" class="logo" href="index.html" onclick="document.getElementById('freddy').innerHTML = 'EAT SHIT'">Freddy K</a>
-          </ul>
-          <ul class="pull-right">
-            <li><a id="skill" href="#">Skills</a></li>
-            <li><a id="accomplish" href="#">Accomplishments</a></li>
-            <li><a id="photo" href="#">Photos</a></li>
-            <li><a id="family" href="#">Family</a></li>
-            <li><a id="famous" href="#">Almost Famous</a></li>
-          </ul>
-        </div>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+    <script src="./javascript/test_page.js"></script>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <a id="freddy" class="logo" href="index.html" onclick="document.getElementById('freddy').innerHTML = 'EAT SHIT'">Freddy K</a>
+        </ul>
+        <ul class="pull-right">
+          <li><a id="skill" href="#">Skills</a></li>
+          <li><a id="accomplish" href="#">Accomplishments</a></li>
+          <li><a id="photo" href="#">Photos</a></li>
+          <li><a id="family" href="#">Family</a></li>
+          <li><a id="famous" href="#">Almost Famous</a></li>
+        </ul>
       </div>
-    <div class="testing-header">
-      <h1 id="wink">Testing this shizz</h1>
     </div>
+    
     <div class="col-md-5">
-      <div class="thumbnail">
-        <img id="he-man" src="./images/He-Man.jpg" onClick="changeImage(); changeHeader()" data-toggle="tooltip" title="I have the power!" data-placement="bottom">
-      </div>
-      <h1>Live video from a random house</h1>
-      <div class="thumbnail-2">
-        <video autoplay="autoplay">
-          <source src="http://freddykilo.ddns.net:5000"/>
-        </video>
-      </div>
-      <h1>Live video from the ISS</h1>
-      <div class="thumbnail-3">
-        <iframe width="480" height="296" src="http://www.ustream.tv/embed/9408562?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>
-      </div>
+      <ul class="test-list">
+        <div class="testing-header">
+          <h1 id="wink">Testing this shizz</h1>
+        </div>
+        <div class="thumbnail">
+          <img id="he-man" src="./images/He-Man.jpg" onClick="changeImage(); changeHeader()" data-toggle="tooltip" title="I have the power!" data-placement="bottom">
+        </div>
+        <h1>Live video from a random house</h1>
+        <div class="thumbnail-2">
+          <video autoplay="autoplay">
+            <source src="http://freddykilo.ddns.net:5000"/>
+          </video>
+        </div>
+        <h1>Live video from the ISS</h1>
+        <div class="thumbnail-3">
+          <iframe width="720" height="428" src="http://www.ustream.tv/embed/9408562?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>
+        </div>
+      </ul>
     </div>
   </body>
 </html>
