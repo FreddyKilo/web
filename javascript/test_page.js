@@ -13,9 +13,11 @@ function changeImage() {
 function changeHeader() {
     if (document.getElementById("wink").innerHTML.match("Wink right eye")) {
         document.getElementById("wink").innerHTML = "Wink left eye!";
-        document.getElementById("he-man").setAttribute("data-original-title", "I have the Power!");
+        document.getElementById("he-man")
+        .setAttribute("data-original-title", "I have the Power!");
     } else {
         document.getElementById("wink").innerHTML = "Wink right eye!";
-        document.getElementById("he-man").setAttribute("data-original-title", "Howdy partner");
+        document.getElementById("he-man")
+        .setAttribute("data-original-title", "Howdy partner");
     }
 }
