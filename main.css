@@ -1,3 +1,8 @@
+.main {
+  margin: auto;
+  width: 1520px;
+}
+
 .nav {
   height: 55px;
 }
@@ -20,7 +25,19 @@
 
 .jumbotron {
   height: 500px;
+  position: relative;
+}
+
+.jumbo-child {
   background-image: url('https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/BackgroundPic.jpg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  margin-left: 50%;
+  left: -760px;
+  height: 500px;
+  width: 1520px;
 }
 
 .jumbotron h1 {
