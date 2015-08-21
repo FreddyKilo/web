@@ -8,14 +8,9 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./javascript/test_page.js"></script>
   </head>
   <body>
-    <script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
-    });
-    </script>
-    <script src="./javascript/test_page.js"></script>
     <div class="nav">
       <div class="container">
         <ul class="pull-left">
@@ -41,9 +36,9 @@
         </div>
         <h1>Live video from a random house</h1>
         <div class="thumbnail-2">
-          <video autoplay="autoplay">
-            <source src="http://freddykilo.ddns.net:5000"/>
-          </video>
+          <VIDEO width="290" height="200" autoplay="autoplay" loop muted>
+            <source src="http://freddykilo.ddns.net:5000" type="video/h264">
+          </VIDEO>
         </div>
         <h1>Live video from the ISS</h1>
         <div class="thumbnail-3">
@@ -51,5 +46,10 @@
         </div>
       </ul>
     </div>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
   </body>
 </html>

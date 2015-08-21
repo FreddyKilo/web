@@ -24,7 +24,8 @@
 }
 
 .jumbotron {
-  height: 480px;
+  background-color: #fff;
+  height: 400px;
   position: relative;
 }
 
@@ -36,7 +37,7 @@
   margin: auto;
   margin-left: 50%;
   left: -760px;
-  height: 480px;
+  height: 400px;
   width: 1520px;
 }
 
@@ -64,6 +65,7 @@
 }
 
 .dream {
+  position: relative;
   background-color: #f2f2ff;
   padding: 20px;
 }
@@ -112,7 +114,3 @@
   font-family: courier;
   font-weight: bold;
 }
-
-/*.col-md-5 ul {
-  position: relative;
-}*/
