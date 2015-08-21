@@ -16,21 +16,40 @@
     });
     </script>
     <script src="./javascript/test_page.js"></script>
-    <div class="main">
-      <div class="nav">
-        <div class="container">
-          <ul class="pull-left">
-            <a id="freddy" class="logo" href="index.html" onclick="document.getElementById('freddy').innerHTML = 'YOU SUCK'">Freddy K</a>
-          </ul>
-          <ul class="pull-right">
-            <li><a id="skill" href="#">Skills</a></li>
-            <li><a id="accomplish" href="#">Accomplishments</a></li>
-            <li><a id="photo" href="#">Photos</a></li>
-            <li><a id="family" href="#">Family</a></li>
-            <li><a id="famous" href="#">Almost Famous</a></li>
-          </ul>
-        </div>
+
+    <script>
+    var figure = $(".video-container");
+    var vid = figure.find("VIDEO");
+
+    [].forEach.call(figure, function (item,index) {
+        item.addEventListener('mouseover', hoverVideo.bind(item,index), false);
+        item.addEventListener('mouseout', hideVideo.bind(item,index), false);
+    });
+
+    function hoverVideo(index, e) {
+        vid[index].play(); 
+    }
+
+    function hideVideo(index, e) {
+        vid[index].pause(); 
+    }
+    </script>
+
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <a id="freddy" class="logo" href="index.html" onclick="document.getElementById('freddy').innerHTML = 'YOU SUCK'">Freddy K</a>
+        </ul>
+        <ul class="pull-right">
+          <li><a id="skill" href="#">Skills</a></li>
+          <li><a id="accomplish" href="#">Accomplishments</a></li>
+          <li><a id="photo" href="#">Photos</a></li>
+          <li><a id="family" href="#">Family</a></li>
+          <li><a id="famous" href="#">Almost Famous</a></li>
+        </ul>
       </div>
+    </div>
+    <div class="main">
       <div class="jumbotron">
         <div class="jumbo-child">
           <div class="container">
@@ -74,6 +93,39 @@
                   <VIDEO width="350" height="200" autoplay="autoplay" loop muted>
                   <source src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/WebMovie3.mp4" type="video/mp4"></VIDEO>
                 </a> -->
+                <h2>Programming</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <!-- <a href="https://soundcloud.com/freddy-kilo" target="_blank" data-toggle="tooltip" title="Music on SoundCloud" data-placement="top"> -->
+                  <!-- <img src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/Thumbnail1.jpg"></img></a> -->
+                <a href="#"><VIDEO width="290" height="200" autoplay="autoplay" loop muted>
+                  <source src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/WebMovie1a.mp4" type="video/mp4"></VIDEO></a>
+                <h2>Music</h2>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <!-- <a href="https://www.youtube.com/user/thefreddykilo/videos" target="_blank" data-toggle="tooltip" title="Videos on YouTube" data-placement="top">
+                  <img src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/Thumbnail2.jpg"></img></a> -->
+                <a href="#"><VIDEO width="290" height="200" autoplay="autoplay" loop muted>
+                  <source src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/WebMovie2.mp4" type="video/mp4"></VIDEO></a>
+                <h2>Raspberry Pi</h2>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <!-- <a href="https://github.com/FreddyKilo" target="_blank" data-toggle="tooltip" title="Code on GitHub" data-placement="top">
+                  <img src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/Thumbnail3.jpg"></img></a> -->
+                <a href="#">
+                  <VIDEO width="290" height="200" autoplay="autoplay" loop muted>
+                  <source src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/WebMovie3.mp4" type="video/mp4"></VIDEO>
+                </a>
                 <h2>Programming</h2>
               </div>
             </div>
