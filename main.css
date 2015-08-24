@@ -60,8 +60,10 @@
   top: 50px;
 }
 .projects h2 {
+  position: relative;
   font-family: Gadget, sans-serif;
   font-weight: bold;
+  text-shadow: 2px 2px #fff;
 }
 
 .dream {
