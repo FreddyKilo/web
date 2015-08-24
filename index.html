@@ -120,17 +120,17 @@
     </script>
     <script>
       window.requestAnimationFrame = window.requestAnimationFrame
-                               || window.mozRequestAnimationFrame
-                               || window.webkitRequestAnimationFrame
-                               || window.msRequestAnimationFrame
-                               || function(f){setTimeout(f, 1000/60)}
+                                 || window.mozRequestAnimationFrame
+                                 || window.webkitRequestAnimationFrame
+                                 || window.msRequestAnimationFrame
+                                 || function(f){setTimeout(f, 1000/60)}
       var mainPhoto = document.getElementById('photo-main');
       var navBar = document.getElementById('freddy');
 
       function parallaxMain(){
       var scrolltop = window.pageYOffset; // get number of pixels document has scrolled vertically
-      mainPhoto.style.top = scrolltop * .6 + 'px'; // move mainPhoto at 50% of scroll speed
-      navBar.style.top = scrolltop * .6 + 'px'; // move navBar at 50% of scroll speed
+      mainPhoto.style.top = scrolltop * .6 + 'px';
+      navBar.style.top = scrolltop * .6 + 'px';
       }
 
       window.addEventListener('scroll', function(){ // on page scroll
