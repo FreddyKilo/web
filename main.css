@@ -5,6 +5,8 @@
 
 .nav {
   height: 55px;
+  position: relative;
+  z-index: 1;
 }
 
 .nav a {
@@ -27,6 +29,7 @@
   background-color: #fff;
   height: 400px;
   position: relative;
+  z-index: -2;
 }
 
 .jumbo-child {
@@ -39,6 +42,7 @@
   left: -760px;
   height: 400px;
   width: 1520px;
+  z-index: -1;
 }
 
 .jumbotron h1 {
