@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    // <!-- <script src="./javascript/test_page.js"></script> -->
   </head>
   <body>
-    <div class="nav">
+    <div class="nav" id="navi">
       <div class="container">
         <ul class="pull-left">
           <a id="freddy" class="logo" href="index.html" onclick="document.getElementById('freddy').innerHTML = 'YOU SUCK'">Freddy K</a>
@@ -119,23 +118,23 @@
     });
     </script>
     <script>
-      window.requestAnimationFrame = window.requestAnimationFrame
-                                 || window.mozRequestAnimationFrame
-                                 || window.webkitRequestAnimationFrame
-                                 || window.msRequestAnimationFrame
-                                 || function(f){setTimeout(f, 1000/60)}
-      var mainPhoto = document.getElementById('photo-main');
-      var navBar = document.getElementById('freddy');
+      // window.requestAnimationFrame = window.requestAnimationFrame
+      //                            || window.mozRequestAnimationFrame
+      //                            || window.webkitRequestAnimationFrame
+      //                            || window.msRequestAnimationFrame
+      //                            || function(f){setTimeout(f, 1000/60)}
+      // var mainPhoto = document.getElementById('photo-main');
+      // var navBar = document.getElementById('freddy');
 
-      function parallaxMain(){
-      var scrolltop = window.pageYOffset; // get number of pixels document has scrolled vertically
-      mainPhoto.style.top = scrolltop * .6 + 'px';
-      navBar.style.top = scrolltop * .6 + 'px';
-      }
+      // function parallaxMain(){
+      // var scrolltop = window.pageYOffset; // get number of pixels document has scrolled vertically
+      // mainPhoto.style.top = scrolltop * .6 + 'px';
+      // navBar.style.top = scrolltop * .6 + 'px';
+      // }
 
-      window.addEventListener('scroll', function(){ // on page scroll
-      requestAnimationFrame(parallaxMain) // call parallaxMain() on next available screen repaint
-      }, false)
+      // window.addEventListener('scroll', function(){ // on page scroll
+      // requestAnimationFrame(parallaxMain) // call parallaxMain() on next available screen repaint
+      // }, false)
     </script>
   </body>
 </html>
