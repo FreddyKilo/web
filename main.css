@@ -1,11 +1,13 @@
 .main {
   margin: auto;
-  width: 1520px;
+  width: 1524px;
 }
 
 .nav {
-  height: 55px;
+  background-color: white;
+  height: 60px;
   position: relative;
+  top: 0px;
   z-index: 1;
 }
 
@@ -14,7 +16,8 @@
   font-size: 18px;
   font-weight: bold;
   padding: 16px 20px;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 
 .nav li {
   display: inline;
@@ -27,22 +30,20 @@
 
 .jumbotron {
   background-color: #fff;
-  height: 400px;
+  height: 450px;
   position: relative;
-  z-index: -2;
 }
 
 .jumbo-child {
   background-image: url('https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/BackgroundPic.jpg');
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 0px;
   margin: auto;
   margin-left: 50%;
   left: -760px;
-  height: 400px;
+  height: 550px;
   width: 1520px;
-  z-index: -1;
 }
 
 .jumbotron h1 {
@@ -65,17 +66,22 @@
   position: relative;
   top: 50px;
 }
+
+.projectsThumbs {
+  position: relative;
+  background-color: white;
+  z-index: 0
+}
+
 .projects h2 {
   position: relative;
   font-weight: bold;
   font-family: Gadget, sans-serif;
-  text-shadow: 1px 1px white;
 }
 
 .projects h4 {
   position: relative;
   font-family: Gadget, sans-serif;
-  text-shadow: 1px 1px white;
 }
 
 .dream {
