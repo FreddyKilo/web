@@ -122,6 +122,10 @@
   height: 200px;
 }
 
+.col-md-5 .thumbnail #he-man {
+  cursor: pointer;
+}
+
 .thumbnail-2 {
   background-size: 100%;
 }
