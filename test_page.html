@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="./javascript/test_page.js"></script>
-    <script src="./player/js/hdwplayer.js"></script>
   </head>
   <body>
     <div class="nav">
@@ -37,22 +36,7 @@
         </div>
         <h1>Live video from a random house</h1>
         <div class="thumbnail-2">
-          <div id="player"></div>
-    <script type="text/javascript">
-      hdwplayer({ 
-        id        : 'player',
-        swf       : './player/player.swf',
-        width     : '640',
-        height    : '334',
-        type      : 'rtmp',
-        streamer  : 'rtmp://192.168.0.16/live',
-        video     : 'home',
-        autoStart : 'true',
-        controlBar: 'true'
-        });
-    </script>
-          <!-- <VIDEO width="720" height="437" autoplay="autoplay" loop muted><source src="http://www.ustream.tv/embed/21159669?html5ui=1" type="video/mp4"></VIDEO> -->
-          <!-- <iframe src="http://www.ustream.tv/embed/21159669?html5ui=1" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="720" height="437"></iframe> -->
+          <iframe src="http://www.ustream.tv/embed/21159669?html5ui=1&showtitle=false&amp;autoplay=true&controls=false" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="720" height="437"></iframe>
         </div>
         <h1>Live video from the ISS</h1>
         <div class="thumbnail-3">
