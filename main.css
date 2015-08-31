@@ -4,8 +4,9 @@
 }
 
 .nav {
+  margin-top: 16px;
   background-color: white;
-  height: 60px;
+  height: 70px;
   position: relative;
   top: 0px;
   z-index: 1;
@@ -40,6 +41,7 @@
   position: fixed;
   top: 0px;
   margin: auto;
+  margin-top: 16px;
   margin-left: 50%;
   left: -760px;
   height: 550px;
