@@ -37,11 +37,12 @@ body {
   background-image: url("http://i.imgur.com/x49jiGe.png");
   opacity: .5;
   background-repeat: no-repeat;
+  background-position-x: 50%;
   position: fixed;
   top: 0px;
   margin: auto;
   height: 3000px;
-  width: 1920px;
+  width: 100%;
 }
 
 .Thumbs .container {
