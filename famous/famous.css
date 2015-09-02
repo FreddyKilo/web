@@ -34,7 +34,7 @@ body {
 }
 
 .main-background {
-  background-image: url("./images/famous-bkg-blur1.jpg");
+  background-image: url("http://i.imgur.com/x49jiGe.png");
   opacity: .5;
   background-repeat: no-repeat;
   position: fixed;
@@ -57,20 +57,20 @@ body {
 
 .col-md-2 .thumbnail {
   margin-top: 100px;
-  /*margin-right: 70px;*/
-  margin-left: 50px;
+  margin-right: 10px;
+  margin-left: 40px;
 }
 
 .col-md-3 .thumbnail {
-  margin-top: 200px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-top: 230px;
+  margin-right: 20px;
+  margin-left: 90px;
 }
 
 .col-md-4 .thumbnail {
-  margin-top: 260px;
-  /*margin-right: 50px;*/
-  margin-left: 50px;
+  margin-top: 300px;
+  margin-right: 20px;
+  margin-left: 80px;
 }
 
 .col-md-5 .thumbnail {
