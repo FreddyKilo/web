@@ -7,7 +7,7 @@ window.requestAnimationFrame = window.requestAnimationFrame
 function parallaxMain(){
     var mainPhoto = $('#photo-main');
     var scrollAmount = parseInt(window.pageYOffset);
-    var topValue = -scrollAmount/6;
+    var topValue = -scrollAmount/5;
     mainPhoto.css("top", topValue + "px");
 }
 
