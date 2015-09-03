@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./javascript/main.js"></script>
   </head>
   <body>
     <div class="nav" id="navi">
@@ -16,7 +17,19 @@
           <a id="freddy" class="logo" href="index.html">Freddy K</a>
         </ul>
         <ul class="pull-right">
-          <li><a id="skill" href="#">Skills</a></li>
+          <li>
+            <span class="dropdown">
+              <span class="dropdown-toggle">
+                <a id="skill" href="#">Skills</a>
+              </span>
+              <ul class="dropdown-menu">
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Cunnilingus</a></li>
+              </ul>
+            </span>
+          </li>
           <li><a id="accomplish" href="#">Accomplishments</a></li>
           <li><a id="photo" href="#">Photos</a></li>
           <li><a id="family" href="#">Family</a></li>
@@ -69,8 +82,8 @@
           <div class="row">
             <div class="col-md-4">
               <div class="thumbnail">
-                <a href="#"><VIDEO width="289" height="180" autoplay="autoplay" loop muted>
-                  <source src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/WebMovie1a.mp4" type="video/mp4"></VIDEO></a>
+                <!-- <a href="#"><VIDEO width="289" height="180" autoplay="autoplay" loop muted> -->
+                  <!-- <source src="https://googledrive.com/host/0B7WKevVfCukUcHNvVTNZd3A3V0E/WebMovie1a.mp4" type="video/mp4"></VIDEO></a> -->
                 <h2>Android</h2>
               </div>
             </div>
@@ -119,7 +132,6 @@
         $('[data-toggle="tooltip"]').tooltip();   
     });
     </script>
-    <script src="./javascript/main.js"></script>
   </body>
 </html>
 
