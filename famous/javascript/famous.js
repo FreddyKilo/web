@@ -39,7 +39,6 @@ var addHover = function($element, onHover, onLeave){
 
 
 var animateZoom = function($element, zoomLevel){
-	var animateMillis
 	var width = $element.width()+10;
 	addHover($element, function(callback) {
 		$element.animate({zIndex: "2"}, 0);
