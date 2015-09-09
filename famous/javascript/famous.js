@@ -40,50 +40,27 @@ var addHover = function($element, onHover, onLeave){
 };
 
 
-var photoHoverZoom1 = function($element){
+var animateZoom = function($element, zoomLevel){
 	var width = $element.width()+10;
-	console.log(width + "px")
-
 	addHover($element, function(callback) {
-		$element.animate({zIndex: "1"}, 0);
-
-		$element.animate({width: width*2.05 + "px"}, 130, "linear", callback);
-		$element.animate({width: width*1.95 + "px"}, 80);
-		$element.animate({width: width*2 + "px"}, 100);
+		$element.animate({zIndex: "2"}, 0);
+		$element.animate({width: width*(zoomLevel+.08) + "px"}, 110, "linear", callback);
+		$element.animate({width: width*(zoomLevel-.04) + "px"}, 80);
+		$element.animate({width: width*zoomLevel + "px"}, 70);
 
 	}, function(callback) {
-
-		$element.animate({width: width*.95 + "px"}, 120, "linear", callback);
-		$element.animate({width: width + "px"}, 80);
-
-		$element.animate({zIndex: "0"}, 0);
-	});
-};
-
-var photoHoverZoom2 = function($element){
-	var width = $element.width()+10;
-	console.log(width + "px")
-
-	addHover($element, function(callback) {
 		$element.animate({zIndex: "1"}, 0);
-
-		$element.animate({width: width*1.55 + "px"}, 100, "linear", callback);
-		$element.animate({width: width*1.45 + "px"}, 80);
-		$element.animate({width: width*1.5 + "px"}, 100);
-
-	}, function(callback) {
-
-		$element.animate({width: width*.95 + "px"}, 120, "linear", callback);
-		$element.animate({width: width + "px"}, 80);
-
+		$element.animate({width: width*.90 + "px"}, 100, "linear", callback);
+		$element.animate({width: width*1.05 + "px"}, 80);
+		$element.animate({width: width + "px"}, 70);
 		$element.animate({zIndex: "0"}, 0);
-	});
-};
 
+	});
+}
 
 $(function(){
-	photoHoverZoom1($('#band-promo-1'));
-	photoHoverZoom1($('#cd-release-1'));
-	photoHoverZoom1($('#band-promo-2'));
-	photoHoverZoom2($('#band-promo-3'));
+	animateZoom($('#band-promo-1'), 2);
+	animateZoom($('#cd-release-1'), 1.7);
+	animateZoom($('#band-promo-2'), 2);
+	animateZoom($('#band-promo-3'), 1.5);
 })
