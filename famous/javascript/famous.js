@@ -66,3 +66,4 @@ $(function(){
 	animateZoom($('#band-promo-4'), 2.5);
 	animateZoom($('#club-red-1'), 2);
 })
+
