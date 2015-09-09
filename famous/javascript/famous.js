@@ -20,8 +20,6 @@ window.addEventListener('scroll', function(){
 
 // Photo animation
 
-var animateMillis = 200;
-
 var addHover = function($element, onHover, onLeave){
 	var hover = function(){
 		$element.off('mouseenter.blowup');
@@ -41,6 +39,7 @@ var addHover = function($element, onHover, onLeave){
 
 
 var animateZoom = function($element, zoomLevel){
+	var animateMillis
 	var width = $element.width()+10;
 	addHover($element, function(callback) {
 		$element.animate({zIndex: "2"}, 0);
@@ -50,7 +49,7 @@ var animateZoom = function($element, zoomLevel){
 
 	}, function(callback) {
 		$element.animate({zIndex: "1"}, 0);
-		$element.animate({width: width*.90 + "px"}, 100, "linear", callback);
+		$element.animate({width: width*.95 + "px"}, 100, "linear", callback);
 		$element.animate({width: width*1.05 + "px"}, 80);
 		$element.animate({width: width + "px"}, 70);
 		$element.animate({zIndex: "0"}, 0);
@@ -59,8 +58,12 @@ var animateZoom = function($element, zoomLevel){
 }
 
 $(function(){
-	animateZoom($('#band-promo-1'), 2);
-	animateZoom($('#cd-release-1'), 1.7);
-	animateZoom($('#band-promo-2'), 2);
-	animateZoom($('#band-promo-3'), 1.5);
+	animateZoom($('#band-promo-1'), 2.2);
+	animateZoom($('#cd-release-1'), 2);
+	animateZoom($('#band-promo-2'), 2.2);
+	animateZoom($('#band-promo-3'), 1.7);
+	animateZoom($('#cd-release-2'), 2.2);
+	animateZoom($('#grotto-1'), 1.8);
+	animateZoom($('#band-promo-4'), 2.5);
+	animateZoom($('#club-red-1'), 2);
 })
