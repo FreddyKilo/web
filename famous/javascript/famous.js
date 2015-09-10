@@ -17,10 +17,8 @@ function headerFade() {
 	if(scrollAmount <= 400){
 		var headerOpacity = 1 - scrollAmount/400;
 		$header.css({opacity: headerOpacity})
-		// $header.animate({opacity: "0"}, 10);
-	} else {
+	}else if($header.css('opacity') != 0){
 		$header.css({opacity: "0"})
-		// $header.animate({opacity: "1"}, 10);
 	}
 }
 
