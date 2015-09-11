@@ -14,11 +14,14 @@ function parallaxMain() {
 function headerFade() {
 	var $header = $('.Thumbs h1');
 	var scrollAmount = getScrollAmount();
-	if(scrollAmount <= 400){
-		var headerOpacity = 1 - scrollAmount/400;
-		$header.css({opacity: headerOpacity})
+	console.log(scrollAmount)
+	if(scrollAmount <= 200){
+		$header.css({opacity: "1"});
+	}else if(scrollAmount > 200 && scrollAmount <= 400){
+		var headerOpacity = 1 - (scrollAmount - 200)/200;
+		$header.css({opacity: headerOpacity});
 	}else if($header.css('opacity') != 0){
-		$header.css({opacity: "0"})
+		$header.css({opacity: "0"});
 	}
 }
 
@@ -84,6 +87,12 @@ $(function(){
 	animateZoom($('#grotto-2'), 2.4);
 	animateZoom($('#playdio-1'), 2.6);
 	animateZoom($('#band-promo-3'), 2.5);
-	animateZoom($('#cd-release-3'), 2.5);
+	animateZoom($('#cd-release-3'), 2.0);
+
+	animateZoom($('#martini-1'), 2.2);
+	animateZoom($('#martini-2'), 2.2);
+	animateZoom($('#club-red-2'), 2.2);
+	animateZoom($('#playdio-2'), 2.1);
+
 })
 
