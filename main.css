@@ -4,6 +4,8 @@
 }
 
 .nav {
+  margin: auto;
+  width: 1524px;
   margin-top: 16px;
   background-color: white;
   height: 70px;
@@ -112,6 +114,10 @@
 
 .dream a {
   color: #00b0ff;
+}
+
+#test-page a{
+  color: #f2f2ff;
 }
 
 .Thumbs h2 {

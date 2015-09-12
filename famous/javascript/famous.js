@@ -55,12 +55,18 @@ var addHover = function($element, onHover, onLeave){
 
 
 var animateZoom = function($element, zoomLevel){
+	var $infoLink = $($element).find($('.info h3'))
 	var width = $element.width()+10;
 	addHover($element, function(callback) {
-		$element.css({zIndex: "2"});
+		$infoLink.css({opacity: 0});
+		$infoLink.animate({opacity: 0}, 300);
+		$infoLink.css({left: width*zoomLevel-($infoLink.width()+25)});
+		$element.css({zIndex: 2});
 		$element.animate({width: width*(zoomLevel+.08) + "px"}, 90, "linear", callback);
 		$element.animate({width: width*(zoomLevel-.04) + "px"}, 80);
 		$element.animate({width: width*zoomLevel + "px"}, 70);
+		$infoLink.css({zIndex: 0});
+		$infoLink.animate({opacity: 1}, 200);
 
 	}, function(callback) {
 		$element.css({zIndex: "1"});
@@ -68,6 +74,8 @@ var animateZoom = function($element, zoomLevel){
 		$element.animate({width: width*1.05 + "px"}, 80);
 		$element.animate({width: width + "px"}, 70);
 		$element.css({zIndex: "0"});
+		$infoLink.css({zIndex: -1});
+		$infoLink.css({left: 20});
 
 	});
 }
