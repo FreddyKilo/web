@@ -34,6 +34,19 @@ window.addEventListener('scroll', function(){
 }, false)
 
 
+var displayInfo = function($element) {
+	var $info = $($element);
+	if($info.css('visibility') == 'hidden'){
+		$info.css({visibility: 'visible'});
+		$info.animate({opacity: 1}, 300);
+	}else{
+		$info.animate({opacity: 0}, 300);
+		$info.delay(300);
+		$info.css({visibility: 'hidden'});
+	}
+}
+
+
 // Photo animation
 var addHover = function($element, onHover, onLeave){
 	var hover = function(){
@@ -53,7 +66,34 @@ var addHover = function($element, onHover, onLeave){
 };
 
 
-var showInfoButton = function($infoLink, width, zoomLevel) {
+var inquire = function($image, zoomLevel, $info) {
+	var $infoLink = $image.find($('.info h3'));
+	var width = $image.width()+10;
+	addHover($image, function(callback) {
+		$image.css({zIndex: 2});
+		$image.animate({width: width*(zoomLevel+.08) + "px"}, 90, "linear", callback);
+		$image.animate({width: width*(zoomLevel-.04) + "px"}, 80);
+		$image.animate({width: width*zoomLevel + "px"}, 70);
+		showInfoButton($infoLink, width, zoomLevel);
+		$info.css({left: width*zoomLevel+40});
+		$info.css({top: $image.css('top')});
+
+	}, function(callback) {
+		$image.css({zIndex: 1});
+		$image.animate({width: width*.95 + "px"}, 100, "linear", callback);
+		$image.animate({width: width*1.05 + "px"}, 80);
+		$image.animate({width: width + "px"}, 70);
+		$image.css({zIndex: 0});
+		hideInfoButton($infoLink);
+		$info.animate({opacity: 0}, 300);
+		$info.delay(300);
+		$info.css({visibility: 'hidden'});
+
+	});
+}
+
+
+function showInfoButton($infoLink, width, zoomLevel) {
 	$infoLink.css({opacity: 0});
 	$infoLink.delay(300);
 	$infoLink.css({left: width*zoomLevel-($infoLink.width()+25)});
@@ -62,54 +102,32 @@ var showInfoButton = function($infoLink, width, zoomLevel) {
 }
 
 
-var hideInfoButton = function($infoLink) {
+function hideInfoButton($infoLink) {
 	$infoLink.css({zIndex: -1});
 	$infoLink.css({left: 20});
 }
 
 
-var animateZoom = function($element, zoomLevel) {
-	var $infoLink = $($element).find($('.info h3'));
-	var width = $element.width()+10;
-	addHover($element, function(callback) {
-		$element.css({zIndex: 2});
-		$element.animate({width: width*(zoomLevel+.08) + "px"}, 90, "linear", callback);
-		$element.animate({width: width*(zoomLevel-.04) + "px"}, 80);
-		$element.animate({width: width*zoomLevel + "px"}, 70);
-		showInfoButton($infoLink, width, zoomLevel);
-
-	}, function(callback) {
-		$element.css({zIndex: "1"});
-		$element.animate({width: width*.95 + "px"}, 100, "linear", callback);
-		$element.animate({width: width*1.05 + "px"}, 80);
-		$element.animate({width: width + "px"}, 70);
-		$element.css({zIndex: "0"});
-		hideInfoButton($infoLink);
-
-	});
-}
-
-
 $(function(){
-	animateZoom($('#band-promo-1'), 2.6);
-	animateZoom($('#cd-release-1'), 2);
-	animateZoom($('#band-promo-2'), 2.2);
-	animateZoom($('#grotto-3'), 1.7);
+	inquire($('#band-promo-1'), 2.6, $('#info-band-promo-1 p'));
+	inquire($('#cd-release-1'), 2, $('#info-cd-release-1 p'));
+	inquire($('#band-promo-2'), 2.2, $('#info-band-promo-2 p'));
+	inquire($('#grotto-3'), 1.7);
 	
-	animateZoom($('#cd-release-2'), 2.4);
-	animateZoom($('#grotto-1'), 1.8);
-	animateZoom($('#band-promo-4'), 2.5);
-	animateZoom($('#club-red-1'), 2);
+	inquire($('#cd-release-2'), 2.4);
+	inquire($('#grotto-1'), 1.8);
+	inquire($('#band-promo-4'), 2.5);
+	inquire($('#club-red-1'), 2);
 
-	animateZoom($('#grotto-2'), 2.4);
-	animateZoom($('#playdio-1'), 2.6);
-	animateZoom($('#band-promo-3'), 2.5);
-	animateZoom($('#cd-release-3'), 2.0);
+	inquire($('#grotto-2'), 2.4);
+	inquire($('#playdio-1'), 2.6);
+	inquire($('#band-promo-3'), 2.5);
+	inquire($('#cd-release-3'), 2.0);
 
-	animateZoom($('#martini-1'), 2.2);
-	animateZoom($('#martini-2'), 2.2);
-	animateZoom($('#club-red-2'), 2.2);
-	animateZoom($('#playdio-2'), 2.1);
+	inquire($('#martini-1'), 2.2);
+	inquire($('#martini-2'), 2.2);
+	inquire($('#club-red-2'), 2.2);
+	inquire($('#playdio-2'), 2.1);
 
 })
 
