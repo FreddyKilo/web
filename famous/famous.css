@@ -2,6 +2,19 @@ body {
   background-color: #000;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 .main {
   margin: auto;
   width: 1920px;
@@ -235,7 +248,31 @@ body {
   background-repeat: no-repeat;
 }
 
-.info-paragraph p {
+.info h3:hover {
+  color: #DD0;
+}
+
+.info-paragraph-right p {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  cursor: default;
+  text-align: center;
+  font-family: 'Rock Salt';
+  font-size: 20px;
+  line-height: 32px;
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px black;
+}
+
+.info-paragraph-left {
   position: relative;
   top: 0px;
   left: 0px;

@@ -39,6 +39,7 @@ var displayInfo = function($element) {
 	if($info.css('visibility') == 'hidden'){
 		$info.css({visibility: 'visible'});
 		$info.animate({opacity: 1}, 300);
+		
 	}else{
 		$info.animate({opacity: 0}, 300);
 		$info.delay(300);
@@ -75,8 +76,9 @@ var inquire = function($image, zoomLevel, $info) {
 		$image.animate({width: width*(zoomLevel-.04) + "px"}, 80);
 		$image.animate({width: width*zoomLevel + "px"}, 70);
 		showInfoButton($infoLink, width, zoomLevel);
-		$info.css({left: width*zoomLevel+40});
-		$info.css({top: $image.css('top')});
+		$info.css({left: width*zoomLevel+20});
+		$('.overlay').show();
+		$('.overlay').animate({opacity: .5}, 700);
 
 	}, function(callback) {
 		$image.css({zIndex: 1});
@@ -88,6 +90,8 @@ var inquire = function($image, zoomLevel, $info) {
 		$info.animate({opacity: 0}, 300);
 		$info.delay(300);
 		$info.css({visibility: 'hidden'});
+		$('.overlay').hide();
+		$('.overlay').css({opacity: 0});
 
 	});
 }
