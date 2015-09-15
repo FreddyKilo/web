@@ -81,7 +81,7 @@ var inquire = function($image, zoomLevel, $info) {
 		if ($info.attr('class') == "info-paragraph-right") {
 			$infoText.css({left: width*zoomLevel+20});
 		}else{
-			$infoText.css({left: -width});
+			$infoText.css({left: -260});
 		};
 		$('.overlay').show();
 		$('.overlay').animate({opacity: .5}, 700);
