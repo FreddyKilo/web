@@ -21,6 +21,7 @@ body {
 }
 
 .nav {
+  margin: auto;
   margin-top: 16px;
   width: 1920px;
   height: 70px;
@@ -248,14 +249,14 @@ body {
   background-repeat: no-repeat;
 }
 
-.info h3:hover {
+/*.info h3:hover {
   color: #eee;
   background-image: url(./images/infoButtonHover.png);
-}
+}*/
 
 .info-paragraph-right p {
   position: fixed;
-  top: 0px;
+  top: 30px;
   left: 0px;
   width: 360px;
   z-index: -5;
@@ -275,7 +276,7 @@ body {
 
 .info-paragraph-left p {
   position: fixed;
-  top: 0px;
+  top: 30px;
   left: 0px;
   width: 360px;
   z-index: 2;

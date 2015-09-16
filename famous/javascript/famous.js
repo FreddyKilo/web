@@ -73,7 +73,7 @@ var inquire = function($image, zoomLevel, $info) {
 	var $infoText = $info.find($('p'));
 	addHover($image, function(callback) {
 		$image.css({zIndex: 2});
-		$image.animate({width: width*(zoomLevel+.08) + "px"}, 90, "linear", callback);
+		$image.animate({width: width*(zoomLevel+.08) + "px"}, 130, "linear", callback);
 		$image.animate({width: width*(zoomLevel-.04) + "px"}, 80);
 		$image.animate({width: width*zoomLevel + "px"}, 70);
 		showInfoButton($infoLink, width, zoomLevel);
@@ -118,6 +118,25 @@ function hideInfoButton($infoLink) {
 }
 
 
+var infoButtonHover = function() {
+	$('.info h3').hover(function(){
+		$(this).css("background-image", "url(./images/infoButtonHover.png)");
+		$(this).css("color", "#eee");
+	}, function(){
+		var $infoTextR = $('.info-paragraph-right p');
+		var $infoTextL = $('.info-paragraph-left p');
+		
+		$infoTextR.css({visibility: "hidden"});
+		$infoTextL.css({visibility: "hidden"});
+		$infoTextR.css({opacity: "0"});
+		$infoTextL.css({opacity: "0"});
+
+		$(this).css("background-image", "url(./images/infoButton.png)");
+		$(this).css("color", "black");
+	});
+}
+
+
 $(function(){
 	inquire($('#band-promo-1'), 2.6, $('#info-band-promo-1'));
 	inquire($('#cd-release-1'), 2, $('#info-cd-release-1'));
@@ -139,5 +158,22 @@ $(function(){
 	inquire($('#club-red-2'), 2.2, $('#info-club-red-2'));
 	inquire($('#playdio-2'), 2.1, $('#info-playdio-2'));
 
-})
+	infoButtonHover();
+
+	// $('.info h3').hover(function(){
+	// 	$(this).css("background-image", "url(./images/infoButtonHover.png)");
+	// 	$(this).css("color", "#eee");
+	// }, function(){
+	// 	var $infoTextR = $('.info-paragraph-right p');
+	// 	var $infoTextL = $('.info-paragraph-left p');
+	// 	$infoTextR.css({visibility: "hidden"});
+	// 	$infoTextL.css({visibility: "hidden"});
+	// 	$infoTextR.css({opacity: "0"});
+	// 	$infoTextL.css({opacity: "0"});
+
+	// 	$(this).css("background-image", "url(./images/infoButton.png)");
+	// 	$(this).css("color", "black");
+	// });
+
+});
 
