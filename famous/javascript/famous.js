@@ -73,7 +73,7 @@ var inquire = function($image, zoomLevel, $info) {
 	var $infoText = $info.find($('p'));
 	addHover($image, function(callback) {
 		$image.css({zIndex: 2});
-		$image.animate({width: width*(zoomLevel+.08) + "px"}, 130, "linear", callback);
+		$image.animate({width: width*(zoomLevel+.08) + "px"}, 100, "linear", callback);
 		$image.animate({width: width*(zoomLevel-.04) + "px"}, 80);
 		$image.animate({width: width*zoomLevel + "px"}, 70);
 		showInfoButton($infoLink, width, zoomLevel);
