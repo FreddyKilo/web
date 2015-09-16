@@ -1,0 +1,57 @@
+body {
+
+}
+
+.main {
+  margin: auto;
+  width: 1920px;
+  height: 1000px;
+  background-image: url("http://vignette2.wikia.nocookie.net/fallout/images/b/b7/Deviantart-please-stand-by-by-gxmew.jpg/revision/latest?cb=20110627214918");
+}
+
+h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 40px;
+}
+
+.nav {
+  margin: auto;
+  width: 1524px;
+  margin-top: 16px;
+  background-color: white;
+  height: 70px;
+  position: relative;
+  top: 0px;
+  z-index: 1;
+}
+
+.nav .dropdown-menu {
+  min-width: 100px;
+  opacity: 0;
+}
+
+.nav .dropdown-menu li a {
+  font-size: 12px;
+  display: block;
+  padding-left: 15px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 20px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav .logo {
+  font-size: 22px;
+  padding: 16px 20px;
+}
