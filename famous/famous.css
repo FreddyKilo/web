@@ -21,6 +21,7 @@ body {
 }
 
 .nav {
+  margin: auto;
   margin-top: 16px;
   width: 1920px;
   height: 70px;
@@ -248,15 +249,36 @@ body {
   background-repeat: no-repeat;
 }
 
-.info h3:hover {
-  color: #DD0;
-}
+/*.info h3:hover {
+  color: #eee;
+  background-image: url(./images/infoButtonHover.png);
+}*/
 
 .info-paragraph-right p {
   position: fixed;
-  top: 0px;
+  top: 30px;
   left: 0px;
-  width: 350px;
+  width: 360px;
+  z-index: -5;
+  opacity: 0;
+  visibility: hidden;
+  cursor: default;
+  text-align: center;
+  font-family: 'Rock Salt';
+  font-size: 20px;
+  line-height: 32px;
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 40px;
+  box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 5px black;
+}
+
+.info-paragraph-left p {
+  position: fixed;
+  top: 30px;
+  left: 0px;
+  width: 360px;
   z-index: 2;
   opacity: 0;
   visibility: hidden;
@@ -266,22 +288,8 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: yellow;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 40px;
+  box-shadow: 0px 0px 100px 80px rgba(0, 0, 0, 0.6);
   text-shadow: 1px 1px 5px black;
-}
-
-.info-paragraph-left {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 350px;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  font-family: 'Rock Salt';
-  font-size: 20px;
-  color: yellow;
-  text-shadow: 1px 1px 2px black;
 }

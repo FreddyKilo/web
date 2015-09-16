@@ -38,14 +38,14 @@ var toggleDropDown = function() {
 
 var dropToggle = function() {
 	$('.dropdown-toggle').click(function() {
-		fadeMiliseconds = 2000;
+		fadeMiliseconds = 200;
 		if (isDropVisible && isDoneFading) { // fade out
 			isDoneFading = false;
 			$('.dropdown-menu').animate({opacity: "0"}, fadeMiliseconds);
 			setTimeOutForToggleOff = setTimeout(toggleDropDown, fadeMiliseconds);
 		} else if (!isDropVisible) { // fade in
 			toggleDropDown();
-			$('.dropdown-menu').animate({opacity: "1"}, fadeMiliseconds/10);
+			$('.dropdown-menu').animate({opacity: "1"}, fadeMiliseconds);
 		} else {
 			$('.dropdown-menu').stop();
 			$('.dropdown-menu').animate({opacity: "0"}, 0);
@@ -55,5 +55,5 @@ var dropToggle = function() {
 	});
 };
 
-$(document).ready(dropToggle);
+// $(document).ready(dropToggle);
 $(document).ready(parlaxScrollPhotoMain);
