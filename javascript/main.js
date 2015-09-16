@@ -55,5 +55,5 @@ var dropToggle = function() {
 	});
 };
 
-$(document).ready(dropToggle);
+// $(document).ready(dropToggle);
 $(document).ready(parlaxScrollPhotoMain);
