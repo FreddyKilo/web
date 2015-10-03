@@ -10,7 +10,7 @@ var parlaxScrollPhotoMain = function() {
 	function parallaxMain(){
 	    var mainPhoto = $('#photo-main');
 	    var scrollAmount = parseInt(window.pageYOffset);
-	    var topValue = -scrollAmount/3;
+	    var topValue = -scrollAmount/2;
 	    mainPhoto.css("top", topValue + "px");
 	}
 
