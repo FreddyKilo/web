@@ -126,10 +126,11 @@ var infoButtonHover = function() {
 		var $infoTextR = $('.info-paragraph-right p');
 		var $infoTextL = $('.info-paragraph-left p');
 		
-		$infoTextR.css({visibility: "hidden"});
-		$infoTextL.css({visibility: "hidden"});
-		$infoTextR.css({opacity: "0"});
-		$infoTextL.css({opacity: "0"});
+		// Uncomment below to hide info on button off-hover
+		// $infoTextR.css({visibility: "hidden"});
+		// $infoTextL.css({visibility: "hidden"});
+		// $infoTextR.css({opacity: "0"});
+		// $infoTextL.css({opacity: "0"});
 
 		$(this).css("background-image", "url(./images/infoButton.png)");
 		$(this).css("color", "black");
