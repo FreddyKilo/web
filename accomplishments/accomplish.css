@@ -1,12 +1,12 @@
 body {
-
+  background-color: #aaaaaa;
 }
 
 .main {
   margin: auto;
-  width: 1920px;
-  height: 1000px;
-  background-image: url("http://vignette2.wikia.nocookie.net/fallout/images/b/b7/Deviantart-please-stand-by-by-gxmew.jpg/revision/latest?cb=20110627214918");
+  width: 1524px;
+  height: 2000px;
+  background-image: url("");
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
   margin: auto;
   width: 1524px;
   margin-top: 16px;
-  background-color: white;
+  background-color: #aaaaaa;
   height: 70px;
   position: relative;
   top: 0px;
@@ -40,7 +40,7 @@ h1 {
 }
 
 .nav a {
-  color: #5a5a5a;
+  color: #222222;
   font-size: 18px;
   font-weight: bold;
   padding: 16px 20px;
@@ -54,4 +54,34 @@ h1 {
 .nav .logo {
   font-size: 22px;
   padding: 16px 20px;
+}
+
+.certificate {
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0px;
+  margin: auto;
+  margin-top: 50px;
+  
+}
+
+.oop_cert {
+  background-image: url('http://i.imgur.com/7BRVidl.jpg');
+  background-size: contain;
+  box-shadow: 0px 0px 20px;
+  margin-left: 50%;
+  left: -488px;
+  height: 750px;
+  width: 976px;
+}
+
+.i_h_t_s {
+  background-image: url('http://i.imgur.com/bi8QqJU.jpg');
+  background-size: contain;
+  box-shadow: 0px 0px 20px;
+  margin-left: 50%;
+  margin-top: 100px;
+  left: -386px;
+  height: 1000px;
+  width: 772px;
 }
