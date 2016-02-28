@@ -1,13 +1,11 @@
 body {
-
+  background-color: black;
 }
 
 .main {
   margin: auto;
   width: 1524px;
   height: 1000px;
-  background-image: url("http://vignette2.wikia.nocookie.net/fallout/images/b/b7/Deviantart-please-stand-by-by-gxmew.jpg/revision/latest?cb=20110627214918");
-  background-repeat: no-repeat;
 }
 
 h1 {
@@ -15,6 +13,12 @@ h1 {
   color: white;
   text-align: center;
   top: 40px;
+}
+
+.in-progress {
+  background-image: url("http://cdn.makeagif.com/media/5-18-2015/RFgj6M.gif");
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .nav {
