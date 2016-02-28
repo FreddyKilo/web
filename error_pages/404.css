@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+.main {
+  margin: auto;
+  width: 1524px;
+  height: 1000px;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 40px;
+}
