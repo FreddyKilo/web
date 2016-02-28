@@ -8,7 +8,7 @@ body {
   height: 1000px;
 }
 
-h1 {
+.main h1 {
   position: relative;
   color: black;
   text-align: center;
