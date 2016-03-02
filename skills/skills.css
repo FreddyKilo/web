@@ -5,18 +5,18 @@ body {
 .main {
   margin: auto;
   width: 1524px;
-  height: 1000px;
+  height: auto;
 }
 
 h1 {
   position: relative;
-  color: white;
-  text-align: center;
+  color: #ddd;
+  text-shadow: 0px 0px 2px #000;
   top: 40px;
 }
 
 .in-progress {
-  background-image: url("http://cdn.makeagif.com/media/5-18-2015/RFgj6M.gif");
+  top: 100px;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -25,7 +25,7 @@ h1 {
   margin: auto;
   width: 1524px;
   margin-top: 14px;
-  background-color: white;
+  background-color: black;
   height: 70px;
   position: relative;
   top: 0px;
@@ -45,7 +45,7 @@ h1 {
 }
 
 .nav a {
-  color: #5a5a5a;
+  color: #ddd;
   font-size: 18px;
   font-weight: bold;
   padding: 16px 20px;
