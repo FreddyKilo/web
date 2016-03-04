@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .main {
@@ -10,7 +10,7 @@ body {
 
 .main h1 {
   position: relative;
-  color: black;
+  color: white;
   text-align: center;
   top: 40px;
 }
