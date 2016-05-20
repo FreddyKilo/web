@@ -62,16 +62,14 @@ h1 {
   top: 0px;
   margin: auto;
   margin-top: 50px;
-  
 }
 
 .oop_cert {
-  background-image: url('http://i.imgur.com/7BRVidl.jpg');
   background-size: contain;
   box-shadow: 0px 0px 20px;
   margin-left: 50%;
   left: -450px;
-  height: 692px;
+  height: 752px;
   width: 900px;
 }
 
